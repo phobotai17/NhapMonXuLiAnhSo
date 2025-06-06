@@ -46,15 +46,15 @@ cv2.blur, cv2.medianBlur, cv2.GaussianBlur
   Median: giữ cạnh tốt, khử nhiễu dạng đốm
   Gaussian: làm mịn ảnh, giữ chi tiết mượt hơn
 
-7)XÁC ĐỊNH BIÊN TRƯỚC KHI KHỬ NHIỄU
+7) XÁC ĐỊNH BIÊN TRƯỚC KHI KHỬ NHIỄU
 sobelx = cv2.Sobel(...)
 sobely = cv2.Sobel(...)
 
   Ảnh được làm mượt trước (Gaussian)
   Sau đó, dùng Sobel để phát hiện biên ngang/dọc
-  Tính độ lớn vector biên → tạo ảnh chỉ hiển thị đường biên
+  Tính độ lớn vector biên để tạo ảnh chỉ hiển thị đường biên
 
-8)ĐỔI MÀU RGB NGẪU NHIÊN SAU KHI KHỬ NHIỄU
+8) ĐỔI MÀU RGB NGẪU NHIÊN SAU KHI KHỬ NHIỄU
 r_scale = random.uniform(0.5, 1.5)
 
   Tạo hiệu ứng màu ngẫu nhiên bằng cách nhân kênh R, G, B với hệ số ngẫu nhiên
