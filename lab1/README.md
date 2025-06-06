@@ -3,9 +3,9 @@ Các thư viện sử dụng:
 - Thư viện PIL (Pillow): Đọc/ghi ảnh, xử lý ảnh cơ bản
 - OpenCV (cv2):	Đọc, xử lý, và lưu ảnh
 - Numpy:	Tính toán ma trận ảnh
-- colorsys:	Chuyển đổi RGB  HSV trong Python chuẩn
+- colorsys:	Chuyển đổi RGB sang HSV và ngược lại
 - os:	Quản lý file/thư mục
-- random:	Sinh giá trị ngẫu nhiên để đổi màu
+- random:	Cho giá trị ngẫu nhiên để đổi màu
 
 Giải thích các câu lệnh:
 
