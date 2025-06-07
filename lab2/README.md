@@ -51,15 +51,11 @@ Sau khi giãn, các giá trị được map lại để nằm trọn vẹn trong
 
 6. List_of_images
 
+list_of_images = [r"exercise\ha-long-bay-in-vietnam.jpg",
+
+                  r"exercise\pagoda.jpg",
+                  
+                  r"exercise\quang_ninh.jpg",]
+                  
+                 
    Danh sách ảnh
-
-7. Menu chương trình
-
-   Sau khi chạy code:
-Chương trình xử lý ảnh
-Image inverse transformation - I
-Gamma correction - G
-Log transformation - L
-Histogram equalization - H
-Contrast stretching - C
-Thoát - E
