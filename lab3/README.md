@@ -10,10 +10,7 @@ Các thư viện sử dụng:
   
   SciPy (fftpack): Biến đổi Fourier 2D
   
-  OS – duyệt thư mục ảnh
-
-  SciPy FFTPack – biến đổi Fourier
-  
+  OS: duyệt thư mục ảnh  
 
 Giải thích các câu lệnh:
 
