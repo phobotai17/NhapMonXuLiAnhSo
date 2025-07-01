@@ -97,3 +97,83 @@ Tự động chọn ngẫu nhiên 1 phép biến đổi trong danh sách:
 "C": cooridnate_map
 
 Biến list_of_images chứa các đường dẫn đến ảnh
+
+Bài tập thêm 1:
+
+Ảnh gốc được dịch sang phải 50 pixel, xuống dưới 30 pixel
+
+Một canvas trống (đen) được tạo để chứa ảnh sau khi tịnh tiến
+
+Áp dụng biến dạng hình sin cho trục x để ảnh gợn sóng theo chiều ngang
+
+Hàm sin() giúp tạo hiệu ứng sóng mượt, tự nhiên
+
+Dùng np.mgrid để tạo ma trận chỉ số cho từng pixel
+
+Các tọa độ được biến đổi theo sóng để áp dụng cho từng pixel
+
+map_coordinates nhận lưới tọa độ mới và nội suy lại ảnh tương ứng, lặp cho từng kênh màu (R, G, B).
+
+Kq:
+
+Ảnh kiwi bị gợn sóng nhẹ theo trục ngang và tịnh tiến về phía dưới và bên phải
+
+Bài tập thêm 2:
+
+Ảnh được đưa về chế độ RGBA, cho phép kiểm tra và giữ vùng trong suốt
+
+Tạo một dải giá trị từ 0 đến 1 theo chiều ngang ảnh x
+
+Dùng để tính trọng số tuyến tính cho nội suy giữa 2 màu
+
+Chỉ áp dụng gradient cho những pixel có độ trong suốt alpha > 0
+
+Mỗi kênh màu (R, G, B) được tính bằng cách nội suy tuyến tính từ color1 đến color2 cho hiệu ứng chuyển màu mượt mà từ trái sang phải
+
+canvas là một tấm nền có kênh alpha (RGBA), nên vẫn giữ được vùng trong suốt
+
+Ảnh được ghép kèm mặt nạ chính nó (giữ alpha), nên hiệu ứng trong suốt không bị mất
+
+kq:
+
+Trái đu đủ chuyển màu từ đỏ sang xanh lá
+
+Dưa hấu chuyển màu từ vàng sang tím
+
+Giữ lại vùng trong suốt
+
+Bài tập thêm 3:
+
+Ảnh gốc được chuyển sang NumPy array để xử lý pixel-level
+
+reshape=False: không mở rộng ảnh sau xoay
+
+mode='constant', cval=255: nền trắng
+
+flipud lật ảnh theo trục dọc
+
+Tạo ảnh trắng mới đủ lớn để chứa cả hai ảnh đã xử lý
+
+Dán ảnh vào vị trí, canh chỉnh khoảng cách 25px, 50px
+
+kq:
+
+thay đổi góc xoay, áp dụng mirror theo chiều ngang
+
+Bài tập thêm 4:
+
+(5, 5, 1): tăng chiều cao & rộng gấp 5 lần, giữ nguyên số kênh màu
+
+order=1: dùng nội suy tuyến tính, tránh răng cưa
+
+Tạo hiệu ứng lượn sóng nhẹ bằng sin & cos
+
+warp_factor * dx * r: tạo hiệu ứng uốn cong từ tâm ảnh
+
+Duyệt từng kênh màu (R, G, B) và ánh xạ lại giá trị pixel theo tọa độ mới
+
+mode='reflect': xử lý vùng ảnh ngoài biên bằng phản chiếu
+
+Kq:
+
+Ảnh ngôi chùa sau khi zoom được uốn cong nhẹ
