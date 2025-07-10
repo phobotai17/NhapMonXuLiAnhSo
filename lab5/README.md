@@ -48,4 +48,45 @@ Cắt ảnh từ tọa độ (y: 10, 350, x: 1000, 1450)
 
 mode='L': đọc ảnh ở dạng grayscale (1 kênh độ sáng)
 
+s là structuring element (SE) hình chữ thập 3x3.
+
+Cấu trúc này giúp tập trung xử lý các điểm ảnh ở giữa và lân cận theo 4 hướng chính.
+
+binary_closing: thực hiện dilation rồi erosion giúp lấp các lỗ nhỏ và làm mịn vùng trắng.
+
+iterations=50: lặp lại phép đóng đến 50 lần để làm mờ các chi tiết nhiễu mạnh mẽ hơn.
+
+KQ:
+
+giúp phân biệt vùng trắng và đen dễ hơn.
+
+Bài tập 4:
+
+Chương trình cung cấp hai nhóm công cụ xử lý ảnh:
+
+1.Geometric Transformations:
+
+Tịnh tiến (Translation): Tịnh tiến ảnh theo giá trị x, y nhập từ người dùng.
+
+Xoay ảnh (Rotation): Xoay ảnh với góc angle do người dùng nhập vào.
+
+Phóng to (Zoom) :	Phóng to ảnh với hệ số zoom_factor.
+
+Vẽ lưới tọa độ (Coordinate Mapping): Thêm lưới tọa độ (grid lines) lên ảnh.
+
+2.Image Segmentation:
+
+Ngưỡng hóa thích nghi (Adaptive Threshold): Áp dụng ngưỡng Otsu và hiển thị ảnh nhị phân.
+
+Giãn ảnh nhị phân (Binary Dilation): Áp dụng phép giãn nhị phân với SE hình chữ thập, 50 lần.
+
+Co ảnh nhị phân (Binary Erosion): Áp dụng phép co nhị phân.
+
+Ngưỡng Otsu (Otsu Thresholding): Áp dụng phân ngưỡng bằng phương pháp Otsu.
+
+Người dùng có thể chọn:
+
+Thực hiện 1 trong 2 nhóm thao tác.
+
+Hoặc thực hiện cả hai nhóm: đầu tiên là geometric, sau đó áp dụng segmentation lên ảnh đã biến đổi.
 
